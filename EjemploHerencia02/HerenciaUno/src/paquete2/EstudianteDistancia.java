@@ -1,5 +1,10 @@
 package paquete2;
 
+/*
+La clase nos da un error debido a que al crear la subclase, al no tener un 
+constructor que se acople a la super clase (Estudiante), este nos muestra error
+*/
+
 public class EstudianteDistancia extends Estudiante{
     
     private int numeroAsignaturas;

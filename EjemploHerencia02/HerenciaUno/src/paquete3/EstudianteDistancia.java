@@ -41,5 +41,29 @@ public class EstudianteDistancia extends Estudiante{
     public double obtenerMatriculaDistancia(){
         return matriculaDistancia;
     }
-
+    
+    /*
+    public String toString(){
+        String cadena = String.format("Nombre estudiante: %s\n"
+                + "Numero de asignaturas: %d\n"
+                + "Valor de asignatura: %.2f\n"
+                + "Valor matricula: %.2f", obtenerNombresEstudiante(),
+                numeroAsignaturas, costoAsignatura, obtenerMatriculaDistancia());
+        return cadena;
+    }
+    */
+    
+    public String toString(){
+        String cadena = String.format("%s\n"
+                + "Numero de asignaturas: %d\n"
+                + "Valor de asignatura: %.2f\n"
+                + "Valor matricula: %.2f", super.toString(),
+                numeroAsignaturas, costoAsignatura, obtenerMatriculaDistancia());
+        return cadena;
+        /*
+        Si deseamos usar el toString propio de la super clase, es decir, el que
+        ya habiamos definido en un principio, podemos llamarla con la palabra
+        restringida super y su toString
+        */
+    }
 }
