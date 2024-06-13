@@ -49,4 +49,19 @@ public class EstudiantePresencial extends Estudiante{
         return matriculaPresencial;
     }
     
+    public String toString(){
+        String cadena = String.format("\nNombre estudiante:%s\n"
+                + "Apellidos estudiante: %s\n"
+                + "Numero de creditos: %d\n"
+                + "Valor de credito: %.2f\n"
+                + "Valor matricula: %.2f\n", nombresEstudiante, obtenerApellidoEstudiante(),
+                numeroCreditos, costoCredito, matriculaPresencial);
+        return cadena;
+        /*
+        Si deseamos usar el toString propio de la super clase, es decir, el que
+        ya habiamos definido en un principio, podemos llamarla con la palabra
+        restringida super y su toString
+        */
+        
+    }
 }
