@@ -25,7 +25,14 @@ public class Ejecutor {
         estDistancia.establecerCostoAsignatura(100);
         estDistancia.calcularMatriculaDistancia();
         
+        EstudiantePresencial estPresencial = new EstudiantePresencial(nombre, 
+                apellido, identificacion, edad);
+        estPresencial.establecerNumeroCreditos(5);
+        estPresencial.establecerCostoCredito(100);
+        estPresencial.calcularMatriculaPresencial();
+        
         System.out.println(estDistancia);
+        System.out.println(estPresencial);
                 
         
     }
